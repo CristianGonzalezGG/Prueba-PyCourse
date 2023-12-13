@@ -1,0 +1,16 @@
+Los datos son: 
+nombre: Lucas
+ Apellido: Gonzalez
+-----
+nombre: Cristian
+ Apellido: Rodriguez
+-----
+nombre: Mario
+ Apellido: Hernandez
+-----
+nombre: Carlos
+ Apellido: Montes
+-----
+nombre: Roberto
+ Apellido: Tarado
+-----
