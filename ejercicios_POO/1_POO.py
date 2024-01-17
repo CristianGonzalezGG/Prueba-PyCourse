@@ -5,10 +5,12 @@ class Estudiante:
         self.grado = grado
     def estudiar(self):
         print("Estudiando...")
-        
-nombre = input("Digame su nombre: ")
-edad = int(input("Ahora su edad: "))
-grado = int(input("Y su grado: "))
+try: 
+    nombre = input("Digame su nombre: ")
+    edad = int(input("Ahora su edad: "))
+    grado = int(input("Y su grado: "))
+except:
+    print("Revisa los datos tontin")
 
 estudiante = Estudiante(nombre,edad,grado)
 

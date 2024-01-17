@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+    {% block title %}
+     
+    {% endblock  %}
+    con Django
+    </title>
+    {% load static %}
+    <link type="text/css" href='{% static "css/styles.css" %}' rel='stylesheet' />
+
+
+</head>
+<body>
+    <!--Cabecera de la pagina-->
+    <header>
+        <div id="logotipo">
+            <!--Logo Django-->
+            <img src="{% static 'images/logo.png' %}" />
+            <h1 id="log"> Sitio Web con Django | Cristian </h1>
+        </div>
+    </header>
+    <nav>
+        <hr/>
+        <ul>
+            <li>
+                <a href= "/mundi">Hola Django</a>
+            </li>
+            <li>
+                <a href= "/inicio">Inicio</a>
+            </li>
+            <li>
+                <a href= "/paginaW">Web Page</a>
+            </li>
+        </ul>
+        <hr/>
+    </nav>
+    <div id="bar">
+
+        <span class="corner-left"></span>
+        <span class="barra"></span>
+        <span class="corner-right"></span>
+
+    </div>
+
+<div class="title">
+<h2 class="titles">Titulo Prueba</h2>
+{% block content %}
+<h1>Soy Padre de Django</h1>    
+{% endblock  %}
+</div>
+    <footer>
+        Created By: Cristian &copy; With Django
+    </footer>
+</body>
+</html>

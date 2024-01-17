@@ -114,3 +114,42 @@ while True:
             print(f"No se encontró el libro '{libro_a_devolver}'.")
     elif option == "6":
         break
+class Student:
+    def __init__(self, name, lastname, age):
+        self.name = name
+        self.lastname = lastname
+        self.age = age
+
+    def agregar(self):
+        print(f"El estudiante {self.name} {self.lastname}, EDAD: {self.age} se matriculó")
+
+    def denegar(self):
+        print(f"El joven {self.name} {self.lastname}, EDAD: {self.age} no se acepta")
+
+
+def validar():
+    name = input("Nombre: ")
+    Lname = input("Apellido: ")
+    age = int(input("EDAD: "))
+
+    student = Student(name, Lname, age)
+    student.agregar()
+
+
+def denegar():
+    name = input("Nombre: ")
+    Lname = input("Apellido: ")
+    age = int(input("EDAD: "))
+
+    student = Student(name, Lname, age)
+    student.denegar()
+
+
+val = input("¿Acepta o no? (si/no): ")
+
+if val.lower() == "si":
+    validar()
+else:
+    denegar()
+    
+

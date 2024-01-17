@@ -13,8 +13,4 @@ except:
     print("Es un numero tontin")
 estadoCivil = input("Solter@ o casad@: ")
 estudianteList = Estudiantes(nombre,edad,estadoCivil)
-print(f"Nombre: {estudianteList.nombre}")
-
-print(Estudiantes("hola",22,"ss"))
-
-        
+print(f"Nombre: {estudianteList.nombre}")        
